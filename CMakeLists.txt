@@ -9,7 +9,8 @@ find_package(Qt6 REQUIRED COMPONENTS Qml Quick Core QuickControls2)
 
 #Enable modules
 set(PROJECT_LIBRARIES Qt6::Core Qt6::Quick Qt6::QuickControls2)
-
+#Resources
+set(RESOURCES ${CMAKE_CURRENT_LIST_DIR}/resources/resources.qrc)
 #Create the executable and configure deployment
 include(tools/cmake/executableCreator.cmake)
 
