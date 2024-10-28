@@ -46,6 +46,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_OUTPUT_DIRECTORY}/lib")
 message(${PROJECT_NAME})
 
 # Source file handling
-file(GLOB_RECURSE Lib_SRCS "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp" "${CMAKE_CURRENT_LIST_DIR}/src/*.cxx")
-file(GLOB_RECURSE Lib_HDRS "${CMAKE_CURRENT_LIST_DIR}/include/*.h" "${CMAKE_CURRENT_LIST_DIR}/include/*.hpp")
+file(GLOB_RECURSE Lib_SRCS "${CMAKE_CURRENT_LIST_DIR}/../../src/*.cpp" "${CMAKE_CURRENT_LIST_DIR}/src/*.cxx")
+file(GLOB_RECURSE Lib_HDRS "${CMAKE_CURRENT_LIST_DIR}/../../include/*.h" "${CMAKE_CURRENT_LIST_DIR}/include/*.hpp")
 set(SOURCES ${Lib_SRCS} ${Lib_HDRS})
