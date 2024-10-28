@@ -1,0 +1,105 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "default",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+      "name": "Debug-Ninja",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "description": "Debug build with Ninja generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "Release-Ninja",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "description": "Release build with Ninja generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "Debug-VisualStudio",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "generator": "Visual Studio 17 2022",
+      "architecture": {
+        "value": "x64"
+      },
+      "description": "Debug build with Visual Studio generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "Release-VisualStudio",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "generator": "Visual Studio 17 2022",
+      "architecture": {
+        "value": "x64"
+      },
+      "description": "Release build with Visual Studio generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "Debug-UnixMakefiles",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "generator": "Unix Makefiles",
+      "description": "Debug build with Unix Makefiles generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "Release-UnixMakefiles",
+      "inherits": [
+        "default",
+        "Qt-Default"
+      ],
+      "generator": "Unix Makefiles",
+      "description": "Release build with Unix Makefiles generator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Qt-Default",
+      "inherits": null,
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "VoalogTkyWuFomeO1TLFx0olLJ4="
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "qt-project.org/Presets": {
+      "checksum": "nBpY2kT9HEy/2Z15Z5boCUR95fI="
+    }
+  }
+}

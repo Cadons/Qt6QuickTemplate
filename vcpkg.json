@@ -1,0 +1,14 @@
+{
+  "name": "QtQuickProject",
+  "version": "1.0.0",
+  "maintainers": "",
+  "description": "Description of the project",
+  "documentation": "",
+  "homepage": "",
+
+  "dependencies": [
+    "qtbase",
+    "qttranslations",
+    "qtdeclarative"
+  ]
+}
