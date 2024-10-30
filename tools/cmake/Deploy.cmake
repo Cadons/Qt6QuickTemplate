@@ -1,10 +1,10 @@
+if(Qt6)
+    # Deployment section for Qt dependencies
+    include(tools/cmake/Qt6Deployer.cmake)
 
-# Deployment section for Qt dependencies
-include(tools/cmake/Qt6Deployer.cmake)
-
-# Call deployment function
-deploy_qt6_dependencies(${PROJECT_NAME})
-
+    # Call deployment function
+    deploy_qt6_dependencies(${PROJECT_NAME})
+endif()
 # Install settings
 include(InstallRequiredSystemLibraries)
 install(TARGETS ${CMAKE_PROJECT_NAME}
