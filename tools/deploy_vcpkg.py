@@ -8,7 +8,7 @@ from time import sleep
 from git import Repo, exc
 
 # Constants
-VCPKG_REPO_URL = "git@srv-git.medacta.locale:mysw_dev/vcpkg.git"  # Replace with actual VCPKG repo URL
+VCPKG_REPO_URL = "<your git repo registry>/vcpkg.git"  # Replace with actual VCPKG repo URL
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 TMP_DIR = os.path.join(PROJECT_DIR, "tmp")
 VCPKG_CLONE_PATH = os.path.join(TMP_DIR, "vcpkg_temp")
